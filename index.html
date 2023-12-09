@@ -49,6 +49,58 @@
             </strong>
         </div>
 
+<!-- Slideshow section added -->
+<div id="Slideshow">
+    <div id="Slideshow_Background"> 
+        <div id="Slideshow_Container">
+            <!-- Slide 1 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/image.2.jpg" alt="Picture of laptop">
+                <div class="text">I'm ready to assit you with any project.</div>
+            </div>
+            <!-- Slide 2 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/JavaScript-Logo.png" alt="JS logo"> 
+                <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+            </div>
+            <!-- Slide 3 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/python.jpg" alt="Python logo">
+                <div class="text">programming language Python,</div>
+            </div>
+            <!-- Slide 4 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/CSS-Logo.jpg" alt="Css logo">
+                <div class="text">C#, .NET Framework. </div>
+            </div>
+            <!-- Slide 5 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/sql.png" alt="SQL logo"> 
+                <div class="text">back end development, databases and SQL.</div>
+            </div>
+            <!-- Slide 6 of 6 -->
+            <div class="mySlides fade">
+                <img class="Slideshow_Images" src="images/image.3.jpg" alt="Replace with a picture of your choosing"> 
+                <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+            </div>
+            <!-- Previous and next buttons -->
+            <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br> <!-- Adds a space between the slideshow images and the dots -->
+
+        <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+        <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span> 
+            <span class="dot" onclick="currentSlide(4)"></span> 
+            <span class="dot" onclick="currentSlide(5)"></span> 
+            <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+    </div>
+</div>
+
         <!--About section-->
         <div class="Row" id="About">
             <!--Left column-->
@@ -103,6 +155,7 @@
                     <label>Message:</label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here">
                         <input type="submit" value="SUBMIT">
+                    
                 </form>
             </div>
         </div>
@@ -114,5 +167,6 @@
                 <br>
             </p>
         </footer>
+        <script src="JS/main.js"></script>
     </body>
 </html>
